@@ -1,0 +1,6 @@
+@use '../../../../app/styles/variables' as vars;
+
+.main {
+  padding-left: vars.$paddings;
+  padding-right: vars.$paddings;
+}

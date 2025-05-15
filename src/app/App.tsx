@@ -1,9 +1,10 @@
-import './styles/App.css';
+// import styles from './styles/App.module.scss';
+import { Home } from '../pages/home';
 
 function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <Home />
     </>
   );
 }
