@@ -1,5 +1,6 @@
 import styles from './styles/Home.module.scss';
 import { Header } from '../../../widgets/Header';
+import { Footer } from '../../../widgets/Footer';
 
 function Home() {
   return (
@@ -33,6 +34,7 @@ function Home() {
         porro a, quaerat rem repellendus. Voluptates perspiciatis, in pariatur impedit, nam facilis
         libero dolorem dolores sunt inventore perferendis, aut sapiente modi nesciunt.
       </main>
+      <Footer />
     </>
   );
 }

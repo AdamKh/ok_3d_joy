@@ -1,25 +1,23 @@
 @use '../../app/styles/variables' as vars;
 
-.header {
+$icon-size: 60px;
+
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: vars.$paddings;
   padding-right: vars.$paddings;
-  height: 80px;
+  height: 200px;
   background-color: vars.$primary-color;
-  margin-bottom: 20px;
-  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0);
 }
 
-.nav ul {
+.contacts {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+}
 
-  li:not(:last-child) {
-    margin-right: 30px;
-  }
+.icon {
+  width: $icon-size;
 }
