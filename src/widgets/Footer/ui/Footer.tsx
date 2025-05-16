@@ -6,10 +6,13 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <h1>This is logo</h1>
-      <div className={styles.contacts}>
-        <a href={SOCIAL_LINKS.instagram} target="_blank">
-          <img className={styles.icon} src={instagram} alt="instagram" />
-        </a>
+      <div className={styles.soc_media}>
+        <p>Наши соц сети:</p>
+        <div className={styles.icons}>
+          <a href={SOCIAL_LINKS.instagram} target="_blank">
+            <img className={styles.icon} src={instagram} alt="instagram" />
+          </a>
+        </div>
       </div>
     </footer>
   );
