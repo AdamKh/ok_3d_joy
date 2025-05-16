@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
@@ -7,16 +8,16 @@ const Header: React.FC = () => {
       <nav className={styles.nav}>
         <ul>
           <li>
-            <a href="#">Главная</a>
+            <Link to="Home">Главная</Link>
           </li>
           <li>
-            <a href="#">Наши работы</a>
+            <Link to="Portfolio">Наши работы</Link>
           </li>
           <li>
-            <a href="#">Услуги</a>
+            <Link to="Services">Услуги</Link>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <Link to="Contacts">Контакты</Link>
           </li>
         </ul>
       </nav>

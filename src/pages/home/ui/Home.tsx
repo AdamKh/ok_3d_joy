@@ -1,11 +1,8 @@
-import styles from './styles/Home.module.scss';
-import { Header } from '@widgets/Header';
-import { Footer } from '@widgets/Footer';
+import styles from './Home.module.scss';
 
 const Home: React.FC = () => {
   return (
     <>
-      <Header />
       <main className={styles.main}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique unde fugit veniam eius,
         perspiciatis sunt? Corporis qui ducimus quibusdam, aliquam dolore excepturi quae. Distinctio
@@ -34,7 +31,6 @@ const Home: React.FC = () => {
         porro a, quaerat rem repellendus. Voluptates perspiciatis, in pariatur impedit, nam facilis
         libero dolorem dolores sunt inventore perferendis, aut sapiente modi nesciunt.
       </main>
-      <Footer />
     </>
   );
 };
