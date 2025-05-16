@@ -8,16 +8,16 @@ const Header: React.FC = () => {
       <nav className={styles.nav}>
         <ul>
           <li>
-            <Link to="Home">Главная</Link>
+            <Link to="home">Главная</Link>
           </li>
           <li>
-            <Link to="Portfolio">Наши работы</Link>
+            <Link to="portfolio">Наши работы</Link>
           </li>
           <li>
-            <Link to="Services">Услуги</Link>
+            <Link to="services">Услуги</Link>
           </li>
           <li>
-            <Link to="Contacts">Контакты</Link>
+            <Link to="contacts">Контакты</Link>
           </li>
         </ul>
       </nav>
