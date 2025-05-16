@@ -2,7 +2,7 @@ import styles from './styles/Home.module.scss';
 import { Header } from '@widgets/Header';
 import { Footer } from '@widgets/Footer';
 
-function Home() {
+const Home: React.FC = () => {
   return (
     <>
       <Header />
@@ -37,6 +37,6 @@ function Home() {
       <Footer />
     </>
   );
-}
+};
 
 export default Home;

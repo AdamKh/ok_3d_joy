@@ -2,7 +2,7 @@ import styles from './Footer.module.scss';
 import { instagram } from '@shared/assets/icons/';
 import { SOCIAL_LINKS } from '@shared/config/constants';
 
-function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <h1>This is logo</h1>
@@ -13,6 +13,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

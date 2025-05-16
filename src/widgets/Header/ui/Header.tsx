@@ -1,6 +1,6 @@
 import styles from './Header.module.scss';
 
-function Header() {
+const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <h1>This is logo</h1>
@@ -22,6 +22,6 @@ function Header() {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;
