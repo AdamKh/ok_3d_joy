@@ -1,6 +1,6 @@
-import styles from '../Footer.module.scss';
-import { instagram } from '../../../shared/assets/icons/';
-import { SOCIAL_LINKS } from '../../../shared/config/constants';
+import styles from './Footer.module.scss';
+import { instagram } from '@shared/assets/icons/';
+import { SOCIAL_LINKS } from '@shared/config/constants';
 
 function Footer() {
   return (
