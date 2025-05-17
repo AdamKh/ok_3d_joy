@@ -5,9 +5,12 @@ import { SOCIAL_LINKS } from '@shared/config/constants';
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
-      <h1>This is logo</h1>
+      <div className={styles.logo_block}>
+        <h1 className={styles.logo}>This is logo</h1>
+        <p className={styles.copyright}>© 2025 Все права защищены</p>
+      </div>
+
       <div className={styles.soc_media}>
-        <p>Наши соц сети:</p>
         <div className={styles.icons}>
           <a href={SOCIAL_LINKS.instagram} target="_blank">
             <img className={styles.icon} src={instagram} alt="instagram" />
