@@ -1,1 +1,3 @@
-export { default as NavLinks } from './NavLinks.tsx';
+import NavLinks from './NavLinks.tsx';
+
+export { NavLinks };

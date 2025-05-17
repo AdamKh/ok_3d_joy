@@ -1,6 +1,8 @@
 @use '@/app/styles/variables' as vars;
 
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,14 +14,93 @@
   box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0);
 }
 
-.nav .navLinks {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+.nav {
+  .navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 
-  li:not(:last-child) {
-    margin-right: 30px;
+    .navLink:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    .navLinks {
+      display: none;
+    }
+  }
+}
+
+.burger {
+  display: none;
+
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+
+    span {
+      height: 3px;
+      background: white;
+      width: 25px;
+      border-radius: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &.active {
+      span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  position: fixed;
+  right: 0;
+  top: 80px;
+  width: 100%;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navLinks {
+    padding: vars.$paddings;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .navLink:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (min-width: vars.$breakpoint-sm) {
+    display: none;
   }
 }
